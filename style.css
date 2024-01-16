@@ -1,0 +1,25 @@
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh; /* Ustawienie wysokości na 100% widoku okna przeglądarki */
+      background: linear-gradient(to bottom, #ff8a00, #da1b60); /* Zastosowanie gradientu z góry na dół */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white; /* Kolor tekstu, dostosuj do czytelności */
+      font-family: Arial, sans-serif; /* Wybór czcionki, dostosuj według potrzeb */
+    }
+
+#karta {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px; /* Dostosuj szerokość i wysokość obrazu według własnych preferencji */
+  height: 50px;
+  cursor: pointer;
+  display: none;
+}
+
+#karta:hover {
+  opacity: 0.8;
+}

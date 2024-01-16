@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient Background</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh; /* Ustawienie wysokości na 100% widoku okna przeglądarki */
+      background: linear-gradient(to bottom, #ff8a00, #da1b60); /* Zastosowanie gradientu z góry na dół */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white; /* Kolor tekstu, dostosuj do czytelności */
+      font-family: Arial, sans-serif; /* Wybór czcionki, dostosuj według potrzeb */
+    }
+     #imageContainer {
+      cursor: pointer;
+      width: 100px; /* Dostosuj szerokość i wysokość do swoich potrzeb */
+      height: 50px;
+      position: relative;
+    }
+
+    #imageContainer img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Dostosuj do wielkości obrazków */
+    }
+
+    #additionalContent {
+      display: none;
+      padding-top: 50px; /* Dostosuj do wysokości guzika, aby zawartość nie była zasłaniana */
+    }
+  </style>
+</head>
+<body>
+  <div id="imageContainer" onmousedown="changeImage()" onmouseup="scrollDown()">
+    <img id="buttonImage" src="button.png" alt="Normal Button">
+  </div>
+
+  <div id="additionalContent">
+    <h1>Dalsza zawartość strony</h1>
+    <p>Tu znajduje się dodatkowa treść po kliknięciu guzika.</p>
+  </div>
+
+  <script>
+    var buttonImage = document.getElementById('buttonImage');
+    var additionalContent = document.getElementById('additionalContent');
+    var isClicked = false;
+
+    function changeImage() {
+      if (!isClicked) {
+        buttonImage.src = 'clickedButton.png';
+      } else {
+        buttonImage.src = 'button.png';
+      }
+      isClicked = !isClicked;
+    }
+
+    function scrollDown() {
+      additionalContent.style.display = 'block';
+      additionalContent.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
