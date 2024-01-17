@@ -1,68 +1,40 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gradient Background</title>
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      height: 100vh; /* Ustawienie wysokości na 100% widoku okna przeglądarki */
-      background: linear-gradient(to bottom, #ff8a00, #da1b60); /* Zastosowanie gradientu z góry na dół */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white; /* Kolor tekstu, dostosuj do czytelności */
-      font-family: Arial, sans-serif; /* Wybór czcionki, dostosuj według potrzeb */
-    }
-     #imageContainer {
-      cursor: pointer;
-      width: 100px; /* Dostosuj szerokość i wysokość do swoich potrzeb */
-      height: 50px;
-      position: relative;
+    @keyframes revealHorizontal {
+      0%, 100% {
+        transform: translateX(0%);
+      }
+      25%, 75% {
+        transform: translateX(100%);
+      }
     }
 
-    #imageContainer img {
+    .image-mask {
+      width: 300px;
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+      background: black; /* Ustaw tło na czarne */
+    }
+
+    .image-mask::before {
+      content: "";
+      display: block;
       width: 100%;
       height: 100%;
-      object-fit: cover; /* Dostosuj do wielkości obrazków */
-    }
-
-    #additionalContent {
-      display: none;
-      padding-top: 50px; /* Dostosuj do wysokości guzika, aby zawartość nie była zasłaniana */
+      background-image: url('pictures/strzalka.svg'); /* Ścieżka do obrazka */
+      background-size: cover;
+      background-repeat: no-repeat;
+      animation: revealHorizontal 4s infinite linear;
     }
   </style>
+  <title>Reveal Image Horizontal</title>
 </head>
 <body>
-  <div id="imageContainer" onmousedown="changeImage()" onmouseup="scrollDown()">
-    <img id="buttonImage" src="button.png" alt="Normal Button">
-  </div>
-
-  <div id="additionalContent">
-    <h1>Dalsza zawartość strony</h1>
-    <p>Tu znajduje się dodatkowa treść po kliknięciu guzika.</p>
-  </div>
-
-  <script>
-    var buttonImage = document.getElementById('buttonImage');
-    var additionalContent = document.getElementById('additionalContent');
-    var isClicked = false;
-
-    function changeImage() {
-      if (!isClicked) {
-        buttonImage.src = 'clickedButton.png';
-      } else {
-        buttonImage.src = 'button.png';
-      }
-      isClicked = !isClicked;
-    }
-
-    function scrollDown() {
-      additionalContent.style.display = 'block';
-      additionalContent.scrollIntoView({ behavior: 'smooth' });
-    }
-  </script>
+  <div class="image-mask"></div>
 </body>
 </html>

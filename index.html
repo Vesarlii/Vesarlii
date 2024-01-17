@@ -8,52 +8,133 @@
   body {
       margin: 0;
       padding: 0;
-      height: 100vh; /* Ustawienie wysokości na 100% widoku okna przeglądarki */
-      background: linear-gradient(to bottom, #ff8a00, #da1b60); /* Zastosowanie gradientu z góry na dół */
-      justify-content: center;
-      align-items: center;
+      height: 300vh; /* Ustawienie wysokości na 100% widoku okna przeglądarki */
+      background: linear-gradient(to bottom, #ff8a00, #da1b60, #da1b60, #da1b60); /* Zastosowanie gradientu z góry na dół */
+
       color: white; /* Kolor tekstu, dostosuj do czytelności */
       font-family: Arial, sans-serif; /* Wybór czcionki, dostosuj według potrzeb */
     }
    #text{
+      padding-top: 1%;
       text-align: center;
-      width: 100%;
-      position: relative;
+      position: relative; 
 }
    #imageContainer {
       cursor: pointer;
-      width: 100px; /* Dostosuj szerokość i wysokość do swoich potrzeb */
-      height: 50px;
-      position: relative;
+      width: 300px;  Dostosuj szerokość i wysokość do swoich potrzeb 
+      height: 150px;
+    position: relative; top: 7vw; left: 44vw;
+
     }
 
     #imageContainer img {
       width: 100%;
-      height: 100%;
-      object-fit: cover; /* Dostosuj do wielkości obrazków */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
     }
+    #pad{
+      width: 250px;
+      padding-top: 4.5%;
+    }
+
+   .center{
+      text-align: center;
+    }
+    
+    @keyframes moveArrow {
+      0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(50px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+      .strzalka {
+      width: 1000px;
+      height: 200px;
+      animation: moveArrow 2s infinite;}
+
+#who{
+padding-top:6%;
+padding-left:2%;}
+
+#edu{padding-top:15%;
+padding-left:2%;
+float:left;}
+#edutext{font-size:27px;
+padding-right:15%;
+padding-top:20%;
+float:right;}
+   
+ #bloklewo{
+    font-size:27px;
+    margin-left:10%; 
+    margin-right:55%;
+    }
+
+#ja{width:25%;
+	float:right;
+	padding-right:15%;
+padding-top: 9%;
+}
+
+
   </style>
 </head>
 <body>
+<div class="center">
+<img id="pad" src="pictures/pad.png" alt="gamepad"/>
+</div>
   <div id="text">
-    <img src="Webside.png" alt="Beata Kubińska, QA Tester"/>
+    <img width="50%" src="Webside.png" alt="Beata Kubińska, QA Tester"/>
   </div> 
   <div id="imageContainer" onmousedown="changeImage(true)" onmouseup="changeImage(false)">
-    <img id="buttonImage" src="button.png" alt="Normal Button">
+    <img id="buttonImage" src="button.png" alt="Normalny guzik">
   </div>
+<div class="center">
+<img class="strzalka" src="pictures/strzalka.svg" alt="strzalka"/>
+</div>
+<div id="jadiv">
+<img id="ja" src="pictures/image.jpg">
+</div>
+  <div id="who">
+    <img width="40%" src="pictures/whoami.png" alt="Who am I?"/>
+  </div> 
 
-  <script>
-    var buttonImage = document.getElementById('buttonImage');
-    var isClicked = false;
+<div id="bloklewo">
+<p> Hey there!
+ I'm someone who's trying their best to keep things in order,
+ but let's be real, I might misplace my keys every now and then.
+ Currently figuring out the ins and outs of JavaScript and C++,
+ and the other stuff like Python, CSS, and HTML?
+ Well, let's just say I'm not completely lost there! Challenges?
+ <strong>Bring 'em on!</strong> I'm all about diving into the unknown
+ and having a good time while at it. Ready to roll up my sleeves
+ for some cool projects – the crazier, the better!</p>
+</div>
+<hr/>
 
-    function changeImage(clicked) {
-      if (clicked) {
-        buttonImage.src = 'clickedButton.png';
-      } else {
-        buttonImage.src = 'button.png';
-      }
-      isClicked = clicked;
-    }
+<div id="edu">
+<img src="pictures/education.png"/ alt="my education">
+</div>
+<div id="edutext">
+<p><strong>Bioinformatics</strong> 2018-2024 <br/>
+ University of the National Education Comission, Cracow<br/>
+ full-time studies
+University
+</p>
+<p>
+</p>
+</div>
+
+
+  <script src="klik.js">
   </script>
 </body>
 </html>
