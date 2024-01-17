@@ -1,17 +1,39 @@
   body {
       margin: 0;
       padding: 0;
-      height: 300vh; /* Ustawienie wysokości na 100% widoku okna przeglądarki */
-      background: linear-gradient(to bottom, #ff8a00, #da1b60, #da1b60, #da1b60); /* Zastosowanie gradientu z góry na dół */
-
+      height: 400vh; /* Ustawienie wysokości na 100% widoku okna przeglądarki */
+      background: linear-gradient(to bottom, #ff8a00, #da1b60, #da1b60, #da1b60, #da1b60); /* Zastosowanie gradientu z góry na dół */
+      font-size: 16px;
       color: white; /* Kolor tekstu, dostosuj do czytelności */
       font-family: Arial, sans-serif; /* Wybór czcionki, dostosuj według potrzeb */
     }
+        @media (max-width: 600px) {
+            body {
+                font-size: 20px; /* Dostosuj rozmiar tekstu dla małych ekranów */
+            }
+        }
+
+        @media (min-width: 1200px) {
+            body {
+                font-size: 27px; /* Dostosuj rozmiar tekstu dla dużych ekranów */
+            }
+        }
+
+#uncover{
+padding-top:61%;
+text-align:center;}
+#downloadtext{
+padding-top:9%;
+text-align: center;
+font-size:3.5vh;
+margin-left:5%;
+margin-right:5%;}
    #text{
       padding-top: 1%;
       text-align: center;
       position: relative; 
 }
+#download{text-align:center;}
    #imageContainer {
       cursor: pointer;
       width: 300px;  Dostosuj szerokość i wysokość do swoich potrzeb 
@@ -49,24 +71,23 @@
       }
     }
       .strzalka {
-      width: 1000px;
-      height: 200px;
+      width: 300px;
+      height: 50px;
       animation: moveArrow 2s infinite;}
 
 #who{
-padding-top:6%;
+padding-top:10%;
 padding-left:2%;}
 
 #edu{padding-top:15%;
 padding-left:2%;
 float:left;}
-#edutext{font-size:27px;
+#edutext{
 padding-right:15%;
 padding-top:20%;
 float:right;}
    
  #bloklewo{
-    font-size:27px;
     margin-left:10%; 
     margin-right:55%;
     }
@@ -74,6 +95,6 @@ float:right;}
 #ja{width:25%;
 	float:right;
 	padding-right:15%;
-padding-top: 9%;
+padding-top: 14%;
 }
 

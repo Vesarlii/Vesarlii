@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hello!</title>
 </head>
+
+
 <body>
 <div class="center">
 <img id="pad" src="pictures/pad.png" alt="gamepad"/>
@@ -14,10 +16,10 @@
     <img width="50%" src="Webside.png" alt="Beata Kubińska, QA Tester"/>
   </div> 
   <div id="imageContainer" onmousedown="changeImage(true)" onmouseup="changeImage(false)">
-    <img id="buttonImage" src="button.png" alt="Normalny guzik">
+    <a id="kotwica" onclick="przewinDoSekcji()"><img id="buttonImage" src="button.png" alt="Normalny guzik"></a>
   </div>
 <div class="center">
-<img class="strzalka" src="pictures/strzalka.svg" alt="strzalka"/>
+<img class="strzalka" src="pictures/strzalka.png" alt="strzalka"/>
 </div>
 <div id="jadiv">
 <img id="ja" src="pictures/image.jpg">
@@ -56,9 +58,32 @@ University
 <li>A certificate of course completion „Basic of programing Python” in Polish <br/>(2023) organized by ZPSB</li>
 </p>
 </div>
-
+<div id="uncover">
+    <img width="50%" src="pictures/uncover.png" alt="Uncover my potential"/>
+</div>
+<div id="downloadtext">
+    <p>Download my CV to explore the enthusiasm and fresh perspectives I bring, even as I embark on the exciting journey of building my professional experience. <br/>Let's connect and shape the future together! </p>
+</div>
+<div id="download">
+    <img width="50%" src="pictures/linkdocv.png" alt="download my CV there!"/>
+</div>
 
   <script src="klik.js">
   </script>
+    <script>
+        function przewinDoSekcji() {
+            var sekcjaDol = document.getElementById('who');
+            var odstep = 200; // Dodatkowy odstęp w pikselach
+ 
+            if (sekcjaDol) {
+                var pozycja = sekcjaDol.offsetTop + odstep;
+
+                window.scrollTo({
+                    top: pozycja,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
 </body>
 </html>
