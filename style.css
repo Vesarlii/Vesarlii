@@ -1,29 +1,43 @@
 	body {
 		margin: 0;
 		padding: 0;
-		height: 400vh; /* Ustawienie wysokości na 100% widoku okna przeglądarki */
-		background: linear-gradient(to bottom, #ff8a00, #da1b60, #da1b60, #da1b60, #da1b60); /* Zastosowanie gradientu z góry na dół */
-		font-size: 16px;
+		height: 470vh; /* Ustawienie wysokości na 100% widoku okna przeglądarki */
+		background: linear-gradient(to bottom, #ff8a00, #da1b60, #da1b60, #da1b60, #da1b60, #1C007B); /* Zastosowanie gradientu z góry na dół */
+		font-size: 20px;
 		color: white; /* Kolor tekstu, dostosuj do czytelności */
 		font-family: Arial, sans-serif; /* Wybór czcionki, dostosuj według potrzeb */
 		}
+	a:link {
+		color:white;
+		}
+	a:visited{
+		color:yellow;
+		}
 
+	td{
+		padding-left:9vw;		
+		}
 
-        @media (max-width: 600px) {
-            body {
-                font-size: 20px; /* Dostosuj rozmiar tekstu dla małych ekranów */
-            }
-        }
+		.ikona{
+		width:50%;
+		}
 
-        @media (min-width: 1200px) {
-            body {
-                font-size: 27px; /* Dostosuj rozmiar tekstu dla dużych ekranów */
-            }
-        }
+		.podpis{
+		padding-top:6vh;
+		font-size: 1.5em;
+		}
+
+	#kontakty
+		{
+		padding-top:14vh;
+		}
 
 	#uncover{
 		padding-top:61%;
 		text-align:center;}
+	#contact{
+		padding-top:15%;
+		}
 
 	#downloadtext{
 		padding-top:9%;
@@ -39,9 +53,9 @@
 
 	#imageContainer {
 		cursor: pointer;
-		width: 300px;  Dostosuj szerokość i wysokość do swoich potrzeb 
-		height: 150px;
-		position: relative; top: 7vw; left: 44vw;
+		width: 120px;
+		height:60px;
+		position: relative; top: 7vw; left: 43vw;
 		}
 	#download {
 		cursor: pointer;
@@ -68,7 +82,7 @@
 		}
 
 	#pad{
-		width: 250px;
+		width: 150px;
 		padding-top: 4.5%;
 		}
 
@@ -88,9 +102,10 @@
       }
     }
 	.strzalka {
-		width: 300px;
-		height: 50px;
+		width: 20%;
+		/*height: 50px;*/
 		animation: moveArrow 2s infinite;
+		position: relative; top: -8vw; left: -1vw;
 		}
 
 	#who{
@@ -102,7 +117,17 @@
 		padding-top:15%;
 		padding-left:2%;
 		float:left;
+
 		}
+	#wow{
+		float:right;
+		position: relative; top: -14vw; left:-2vw;
+	}
+	
+	#puchar{
+		position:absolute; top: 165vh; left: 80vw;
+		width: 10vw;
+	}
 
 	#edutext{
 		padding-right:15%;
@@ -121,3 +146,71 @@
 		padding-top: 14%;
 		}
 
+	@media (max-width: 600px) {
+		body {
+			font-size: 16px; /* Dostosuj rozmiar tekstu dla małych ekranów */
+		}
+		#pad
+			{width: 100px;}
+		#imageContainer {
+			width: 75px;  Dostosuj szerokość i wysokość do swoich potrzeb 
+			height: 37px;
+			position: relative; top: 8vw; left: 41vw;}
+		.strzalka {
+			position: relative; top: -11vw; left: -3vw;}
+		}
+	}
+        @media (min-width: 800px) {
+		.strzalka {
+			position: relative; top: -4vw; left: -1vw;
+		}
+
+	}
+        @media (min-width: 1000px) {
+		#imageContainer {
+			width: 200px;  Dostosuj szerokość i wysokość do swoich potrzeb 
+			position: relative; top: 7vw; left: 41.5vw;
+
+			}
+		.strzalka {
+			position: relative; top: -3vw; left: -1vw;
+		}
+		}
+        @media (min-width: 1200px) {
+            body {
+                font-size: 27px; /* Dostosuj rozmiar tekstu dla dużych ekranów */
+            }
+		#pad
+			{width:300px;
+		}
+		#imageContainer {
+			width: 250px;  Dostosuj szerokość i wysokość do swoich potrzeb 
+			height: 125px;
+			position: relative; top: 8vw; left: 39vw;
+		}
+		.strzalka {
+			position: relative; top: -4vw; left: -1vw;
+		}
+	}
+
+        @media (min-width: 1500px) {
+
+		#imageContainer {
+			width: 300px;  Dostosuj szerokość i wysokość do swoich potrzeb 
+			height: 150px;
+			position: relative; top: 7vw; left: 41vw;
+		} 
+		.strzalka {
+			position: relative; top: -3vw; left: -1vw;
+		}
+        }
+       @media (min-width: 1800px) {
+
+		#imageContainer {
+			width: 300px;  Dostosuj szerokość i wysokość do swoich potrzeb 
+			height: 150px;
+			position: relative; top: 7vw; left: 44vw;}
+		.strzalka {
+			position: relative; top: -2vw; left: -3vw;
+		}
+}
