@@ -1,12 +1,14 @@
-  body {
-      margin: 0;
-      padding: 0;
-      height: 400vh; /* Ustawienie wysokości na 100% widoku okna przeglądarki */
-      background: linear-gradient(to bottom, #ff8a00, #da1b60, #da1b60, #da1b60, #da1b60); /* Zastosowanie gradientu z góry na dół */
-      font-size: 16px;
-      color: white; /* Kolor tekstu, dostosuj do czytelności */
-      font-family: Arial, sans-serif; /* Wybór czcionki, dostosuj według potrzeb */
-    }
+	body {
+		margin: 0;
+		padding: 0;
+		height: 400vh; /* Ustawienie wysokości na 100% widoku okna przeglądarki */
+		background: linear-gradient(to bottom, #ff8a00, #da1b60, #da1b60, #da1b60, #da1b60); /* Zastosowanie gradientu z góry na dół */
+		font-size: 16px;
+		color: white; /* Kolor tekstu, dostosuj do czytelności */
+		font-family: Arial, sans-serif; /* Wybór czcionki, dostosuj według potrzeb */
+		}
+
+
         @media (max-width: 600px) {
             body {
                 font-size: 20px; /* Dostosuj rozmiar tekstu dla małych ekranów */
@@ -19,45 +21,60 @@
             }
         }
 
-#uncover{
-padding-top:61%;
-text-align:center;}
-#downloadtext{
-padding-top:9%;
-text-align: center;
-font-size:3.5vh;
-margin-left:5%;
-margin-right:5%;}
-   #text{
-      padding-top: 1%;
-      text-align: center;
-      position: relative; 
-}
-#download{text-align:center;}
-   #imageContainer {
-      cursor: pointer;
-      width: 300px;  Dostosuj szerokość i wysokość do swoich potrzeb 
-      height: 150px;
-    position: relative; top: 7vw; left: 44vw;
+	#uncover{
+		padding-top:61%;
+		text-align:center;}
 
-    }
+	#downloadtext{
+		padding-top:9%;
+		text-align: center;
+		font-size:3.5vh;
+		margin-left:5%;
+		margin-right:5%;}
+	#text{
+		padding-top: 1%;
+		text-align: center;
+		position: relative; 
+		}
 
-    #imageContainer img {
-      width: 100%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+	#imageContainer {
+		cursor: pointer;
+		width: 300px;  Dostosuj szerokość i wysokość do swoich potrzeb 
+		height: 150px;
+		position: relative; top: 7vw; left: 44vw;
+		}
+	#download {
+		cursor: pointer;
+		width: 700px;  Dostosuj szerokość i wysokość do swoich potrzeb 
+		height: 300px;
+		position: relative; top: 7vw; left: 38vw;
+		text-align:center;
+   		 }
 
-    }
-    #pad{
-      width: 250px;
-      padding-top: 4.5%;
-    }
+	#imageContainer img {
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		}
 
-   .center{
-      text-align: center;
-    }
+	#downloadButton {
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		}
+
+	#pad{
+		width: 250px;
+		padding-top: 4.5%;
+		}
+
+	.center{
+		text-align: center;
+		}
     
     @keyframes moveArrow {
       0% {
@@ -70,31 +87,37 @@ margin-right:5%;}
         transform: translateX(0);
       }
     }
-      .strzalka {
-      width: 300px;
-      height: 50px;
-      animation: moveArrow 2s infinite;}
+	.strzalka {
+		width: 300px;
+		height: 50px;
+		animation: moveArrow 2s infinite;
+		}
 
-#who{
-padding-top:10%;
-padding-left:2%;}
+	#who{
+		padding-top:10%;
+		padding-left:2%;
+		}
 
-#edu{padding-top:15%;
-padding-left:2%;
-float:left;}
-#edutext{
-padding-right:15%;
-padding-top:20%;
-float:right;}
+	#edu{
+		padding-top:15%;
+		padding-left:2%;
+		float:left;
+		}
+
+	#edutext{
+		padding-right:15%;
+		padding-top:20%;
+		float:right;
+		}
    
- #bloklewo{
-    margin-left:10%; 
-    margin-right:55%;
-    }
+	#bloklewo{
+		margin-left:10%; 
+		margin-right:55%;
+		}
 
-#ja{width:25%;
-	float:right;
-	padding-right:15%;
-padding-top: 14%;
-}
+	#ja{width:25%;
+		float:right;
+		padding-right:15%;
+		padding-top: 14%;
+		}
 
