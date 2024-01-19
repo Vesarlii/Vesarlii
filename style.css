@@ -1,7 +1,8 @@
 	body {
 		margin: 0;
 		padding: 0;
-		height: 470vh; /* Ustawienie wysokości na 100% widoku okna przeglądarki */
+
+		min-height: 100vh; /* Ustawienie wysokości na 100% widoku okna przeglądarki */
 		background: linear-gradient(to bottom, #ff8a00, #da1b60, #da1b60, #da1b60, #da1b60, #1C007B); /* Zastosowanie gradientu z góry na dół */
 		font-size: 20px;
 		color: white; /* Kolor tekstu, dostosuj do czytelności */
@@ -13,23 +14,31 @@
 	a:visited{
 		color:yellow;
 		}
+	
+	/*.link{
+		font-size: 8.5px;
+		}*/
 
-	td{
-		padding-left:9vw;		
+	 td{
+		padding-left:2.5vw;	
+		padding-right:2.5vw;		
 		}
 
-		.ikona{
-		width:50%;
+	.ikona{
+		width:12vw;
+		}
+	#ikony{ margin: auto;
 		}
 
-		.podpis{
+	.podpis{
 		padding-top:6vh;
-		font-size: 1.5em;
+		font-size: 1.2em;
 		}
 
 	#kontakty
 		{
 		padding-top:14vh;
+		text-align: center;
 		}
 
 	#uncover{
@@ -144,6 +153,7 @@
 		padding-top: 14%;
 		}
 
+
 	@media (max-width: 600px) {
 		body {
 			font-size: 16px; /* Dostosuj rozmiar tekstu dla małych ekranów */
@@ -160,9 +170,18 @@
 			width: 200px;  Dostosuj szerokość i wysokość do swoich potrzeb 
 			height: 100px;
 			position: relative; top: 8vw; left: 30vw;}
+	.podpis{
+		padding-top:3vh;}
+	#kontakty
+		{
+		padding-top:6vh;
+		}
 		#downloadtext {
 	font-size: 16px;
 	}
+	.link{
+		font-size: 8.5px;
+		}
 	}
         @media (min-width: 800px) {
 		.strzalka {
