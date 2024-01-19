@@ -33,10 +33,11 @@
 		}
 
 	#uncover{
-		padding-top:61%;
+		padding-top:70vh;
 		text-align:center;}
 	#contact{
-		padding-top:15%;
+		padding-top:20%;
+		width: 90%;
 		}
 
 	#downloadtext{
@@ -59,9 +60,9 @@
 		}
 	#download {
 		cursor: pointer;
-		width: 700px;  Dostosuj szerokość i wysokość do swoich potrzeb 
-		height: 300px;
-		position: relative; top: 7vw; left: 38vw;
+		width: 400px;  Dostosuj szerokość i wysokość do swoich potrzeb 
+		height: 200px;
+		position: relative; top: 7vw; left: 18vw;
 		text-align:center;
    		 }
 
@@ -113,7 +114,7 @@
 		padding-left:2%;
 		}
 
-	#edu{
+	.edu{
 		padding-top:15%;
 		padding-left:2%;
 		float:left;
@@ -155,7 +156,13 @@
 			position: relative; top: 8vw; left: 41vw;}
 		.strzalka {
 			position: relative; top: -11vw; left: -3vw;}
-		}
+		#download {
+			width: 200px;  Dostosuj szerokość i wysokość do swoich potrzeb 
+			height: 100px;
+			position: relative; top: 8vw; left: 30vw;}
+		#downloadtext {
+	font-size: 16px;
+	}
 	}
         @media (min-width: 800px) {
 		.strzalka {
@@ -171,8 +178,13 @@
 			}
 		.strzalka {
 			position: relative; top: -3vw; left: -1vw;
-		}
-		}
+			}
+		#download {
+			width: 400px;  Dostosuj szerokość i wysokość do swoich potrzeb 
+			height: 200px;
+			position: relative; top: 8vw; left: 30vw;}		
+
+}
         @media (min-width: 1200px) {
             body {
                 font-size: 27px; /* Dostosuj rozmiar tekstu dla dużych ekranów */
@@ -188,6 +200,14 @@
 		.strzalka {
 			position: relative; top: -4vw; left: -1vw;
 		}
+	#uncover{
+		padding-top:120vh;
+	}
+
+		#download {
+			width: 500px;  Dostosuj szerokość i wysokość do swoich potrzeb 
+			height: 200px;
+			position: relative; top: 8vw; left: 30vw;}	
 	}
 
         @media (min-width: 1500px) {
@@ -200,6 +220,11 @@
 		.strzalka {
 			position: relative; top: -3vw; left: -1vw;
 		}
+		#download {
+			width: 600px;  Dostosuj szerokość i wysokość do swoich potrzeb 
+			height: 300px;
+			position: relative; top: 8vw; left: 30vw;}
+
         }
        @media (min-width: 1800px) {
 
@@ -210,5 +235,9 @@
 		.strzalka {
 			position: relative; top: -2vw; left: -3vw;
 		}
+		#download {
+			width: 700px;  Dostosuj szerokość i wysokość do swoich potrzeb 
+			height: 300px;
+			position: relative; top: 8vw; left: 35vw;}
 
 }
