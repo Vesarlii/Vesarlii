@@ -122,12 +122,9 @@
 	#wow{
 		float:right;
 		position: relative; top: -14vw; left:-2vw;
+		width: 20%;
 	}
 	
-	#puchar{
-		position:absolute; top: 165vh; left: 80vw;
-		width: 10vw;
-	}
 
 	#edutext{
 		padding-right:15%;
@@ -213,4 +210,5 @@
 		.strzalka {
 			position: relative; top: -2vw; left: -3vw;
 		}
+
 }
