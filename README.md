@@ -16,7 +16,7 @@ Feel free to explore my repositories, and don't hesitate to reach out if you hav
 ## Contact
 
 - GitHub: [Vesarlii] (https://vesarlii.github.io/Vesarlii/)
-- LinkedIn: [Beata Kubińska] (https://www.linkedin.com/in/beata-kubińska111/)
+- LinkedIn: [Beata Kubińska](https://www.linkedin.com/in/beata-kubińska111/)
 - Email: bkubinska111@gmail.com
 
 ## Thanks for Visiting!
