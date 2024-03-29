@@ -13,7 +13,6 @@ Each project serves as an opportunity for me to learn and refine my skills.
 
 Feel free to explore my repositories, and don't hesitate to reach out if you have any questions or suggestions.
 
-My current project: https://vesarlii.github.io/SpookyGame/
 
 ## Contact
 
